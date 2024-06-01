@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BEC student</string>
+    <string-array name="regulation">
+        <item>Y10</item>
+        <item>Y11</item>
+        <item>Y12</item>
+        <item>Y13</item>
+        <item>Y14</item>
+        <item>Y15</item>
+        <item>Y16</item>
+        <item>Y17</item>
+        <item>Y18</item>
+        <item>Y19</item>
+        <item>Y20/L21</item>
+        <item>Y21/L22</item>
+        <item>Y22/L23</item>
+        <item>Y23/L24</item>
+    </string-array>
+    <string-array name="branch">
+        <item>CSE</item>
+        <item>CB</item>
+        <item>DS</item>
+        <item>AIML</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>EIE</item>
+        <item>ME</item>
+        <item>CE</item>
+    </string-array>
+    <string name="developer"><u>Developer</u></string>
+</resources>

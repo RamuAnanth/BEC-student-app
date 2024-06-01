@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6174507814",
+    "project_id": "bec-app-2328c",
+    "storage_bucket": "bec-app-2328c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6174507814:android:7b0f11f6357cab71a3f7e7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsc0mtCVa4rSp6yLNQiPfu3C0iY0rv1PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
