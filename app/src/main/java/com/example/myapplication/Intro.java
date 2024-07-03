@@ -39,28 +39,32 @@ public class Intro extends AppCompatActivity implements SwipeRefreshLayout.OnRef
             public void onClick(View v) {
                 Intent intent =new Intent(Intro.this,homepage.class);
                 startActivity(intent);
-                finish();
             }
         });
-//        refresh.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent(Intro.this,Intro.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(!aat1.getText().toString().isEmpty())
                     a1=Double.parseDouble(aat1.getText().toString());
+                else
+                    a1=0;
                 if(!aat2.getText().toString().isEmpty())
                     a2=Double.parseDouble(aat2.getText().toString());
+                else
+                    a2=0;
                 if(!mid1.getText().toString().isEmpty())
                     m1=Double.parseDouble(mid1.getText().toString());
+                else
+                    m1=0;
                 if(!mid2.getText().toString().isEmpty())
                     m2=Double.parseDouble(mid2.getText().toString());
+                else
+                    m2=0;
+                if(a1>10||a2>10||a1<0||a2<0||m1>35||m1<0||m2>35||m2<0){
+                    results.setText("Please enter the valid marks.");
+                    grade.setText("If confused check note 👇");
+                }
+                else{
                 double a=(a1+a2)/2;
                 double b=Math.max(m1,m2);
                 double c=Math.min(m1,m2);
@@ -76,7 +80,7 @@ public class Intro extends AppCompatActivity implements SwipeRefreshLayout.OnRef
                 else {
                     results.setText("Marks="+finalval);
                     grade.setText("Status=Fail");
-                }
+                }}
 
             }
         });

@@ -26,7 +26,6 @@ public class about extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(about.this,homepage.class);
                 startActivity(intent);
-                finish();
             }
         });
         ImageView youtube,insta;

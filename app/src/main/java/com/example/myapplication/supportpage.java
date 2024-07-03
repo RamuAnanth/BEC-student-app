@@ -25,7 +25,6 @@ public class supportpage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(supportpage.this, homepage.class);
                 startActivity(intent);
-                finish();
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

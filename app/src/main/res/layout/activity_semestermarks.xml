@@ -12,8 +12,6 @@
         android:layout_height="50dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
         app:lottie_rawRes="@raw/backbuttonanimation" />
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +27,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:elevation="11dp"
         app:cardBackgroundColor="#40B1BC"

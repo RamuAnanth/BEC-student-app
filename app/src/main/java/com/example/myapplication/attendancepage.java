@@ -35,7 +35,6 @@ int total,attend;
             public void onClick(View v) {
                 Intent intent=new Intent(attendancepage.this, homepage.class);
                 startActivity(intent);
-                finish();
             }
         });
         submit.setOnClickListener(new View.OnClickListener() {

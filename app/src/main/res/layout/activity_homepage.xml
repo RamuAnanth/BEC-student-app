@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:verticalScrollbarPosition="right"
-    android:background="#2D8C36"
+    android:background="#fff"
     android:scrollbars="horizontal"
     tools:context=".homepage">
     <TextView
@@ -14,15 +14,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Bapatla Engineering college,Bapatla"
         android:textAlignment="center"
         android:textColor="#024275"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
     <TextView
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:text="(AUTONOMOUS)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,11 +31,11 @@
         />
     <TextView
         android:text="ESTD 1981"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="64dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         />
@@ -52,6 +52,17 @@
     android:background="@drawable/basepic"
 >
     <TextView
+        android:id="@+id/displayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="#130EA8"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,41 +75,40 @@
         android:layout_marginLeft="30dp"
         />
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="88dp"
         app:cardBackgroundColor="#3F51B5"
-        android:elevation="15dp"
-        app:cardCornerRadius="200dp"
+        android:elevation="11dp"
+        app:cardCornerRadius="100dp"
         app:cardElevation="11dp"
         android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="45dp">
 
         <Button
             android:id="@+id/home"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
             android:text="Home"
             android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
         app:cardBackgroundColor="#A3E9EC"
         android:elevation="11dp"
         app:cardElevation="11dp"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="110dp"
-        android:layout_marginLeft="205dp">
+        android:layout_marginLeft="180dp">
     <Button
         android:id="@+id/about"
         android:text="About"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textColor="@color/black"
         android:background="?android:attr/selectableItemBackground"
         android:textStyle="bold"
@@ -106,9 +116,9 @@
         />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="270dp"
         app:cardBackgroundColor="#DC7169"
         android:layout_marginTop="10dp"
         app:cardElevation="11dp"
@@ -122,19 +132,19 @@
         android:background="?android:attr/selectableItemBackground"
         android:text="Logout"
         android:textStyle="bold"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textColor="#FFFFFF"
         />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
         app:cardCornerRadius="100dp"
         app:cardElevation="11dp"
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="#DCA75A"
-        android:layout_marginLeft="110dp"
+        android:layout_marginLeft="90dp"
         android:elevation="11dp">
         <Button
             android:id="@+id/menu"
@@ -144,35 +154,33 @@
             android:text="Menu"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="376dp"
-        android:layout_marginTop="200dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="110dp"
             android:text="About the Campus"
             android:textAlignment="center"
-            android:textColor="#800000"
+            android:textColor="#05050C"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="250dp"
             android:text="The Bapatla Engineering College(Autonomous), one of the seven educational institutions sponsored by the Bapatla Education Society, was established in 1981 with a vision to impart quality technical education and is affiliated to Acharya Nagarjuna University. The College is a little away from the din and bustle of Bapatla, a town with a historic and hoary past, about 75 Km. south of Vijayawada on Chennai-Vijayawada rail route. The college offers B.Tech. Programmes in 8 branches of Engineering-Computer Science...etc"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-    </RelativeLayout>
 </RelativeLayout>
 </RelativeLayout>

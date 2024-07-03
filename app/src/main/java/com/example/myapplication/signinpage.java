@@ -72,10 +72,13 @@ public class signinpage extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
+                    String name=snapshot.child("name").getValue(String.class);
                     String storedPassword = snapshot.child("password").getValue(String.class);
                     if (storedPassword != null && storedPassword.equals(password)) {
                         Toast.makeText(signinpage.this, "Login successful", Toast.LENGTH_SHORT).show();
+
                         Intent intent = new Intent(signinpage.this, homepage.class);
+                        intent.putExtra("name",name);
                         startActivity(intent);
                         finish();
                     } else {

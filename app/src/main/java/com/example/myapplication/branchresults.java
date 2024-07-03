@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class branchresults extends AppCompatActivity {
     Spinner branch,registraion;
-    Button rsubmit;
+    Button rsubmit,back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,13 @@ public class branchresults extends AppCompatActivity {
         ArrayAdapter<CharSequence> bra=ArrayAdapter.createFromResource(this,R.array.branch,android.R.layout.simple_spinner_item);
         bra.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         branch.setAdapter(bra);
+        back=findViewById(R.id.backtohome);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(branchresults.this,homepage.class));
+            }
+        });
         rsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

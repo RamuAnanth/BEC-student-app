@@ -5,16 +5,10 @@
         android:title="Internal Calculator" />
     <item
         android:id="@+id/item2"
-        android:title="Attendence Calculator" />
+        android:title="Required Attendence" />
     <item
         android:id="@+id/item3"
         android:title="Semester Marks" />
-    <item
-        android:id="@+id/item4"
-        android:title="Sign in" />
-    <item
-        android:id="@+id/item5"
-        android:title="Sign up" />
     <item
         android:id="@+id/item6"
         android:title="Support" />

@@ -18,14 +18,14 @@
         android:text="Bapatla Engineering college,Bapatla"
         android:textAlignment="center"
         android:textColor="#024275"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Internal Calculator"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:textColor="#D11E11"
@@ -137,7 +137,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="380dp"
         android:text=""
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
@@ -148,7 +148,7 @@
         android:layout_marginTop="430dp"
         android:layout_marginLeft="40dp"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="20sp"
         />
 
     <ImageView
@@ -162,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="470dp"
         app:cardCornerRadius="11dp"
         app:cardBackgroundColor="#E085EF"
         app:cardElevation="11dp">

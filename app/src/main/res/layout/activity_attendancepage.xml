@@ -24,16 +24,16 @@
         android:layout_marginTop="20dp"
         android:text="Bapatla Engineering College, Bapatla"
         android:textAlignment="center"
-        android:textColor="#381C3A"
+        android:textColor="#083DA6"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
-        android:text="Attendance Calculator"
+        android:text="Required Attendance"
         android:textAlignment="center"
         android:textColor="#D11E11"
         android:textSize="20sp"

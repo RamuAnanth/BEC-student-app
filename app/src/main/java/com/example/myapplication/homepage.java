@@ -3,12 +3,8 @@ package com.example.myapplication;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewParent;
-import android.widget.ArrayAdapter;
 import android.widget.*;
 import android.view.View;
 import androidx.activity.EdgeToEdge;
@@ -17,19 +13,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.util.ArrayList;
+
 public class homepage extends AppCompatActivity {
+
+
     Button logout,aboutpage,menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_homepage);
+        String username=getIntent().getStringExtra("name");
+        ArrayList<String> arrayList=new ArrayList<>();
+        arrayList.add(username);
         FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
             @Override
             public void onComplete(@NonNull Task<String> task) {
@@ -45,6 +47,8 @@ public class homepage extends AppCompatActivity {
             }
         });
         logout=findViewById(R.id.logout);
+        TextView name=findViewById(R.id.displayname);
+        name.setText("Hey ,hi "+arrayList.get(0)+" welcome to our 🏠 app");
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,30 +93,16 @@ public class homepage extends AppCompatActivity {
                 int itemId = item.getItemId();
                 if (itemId == R.id.item1) {
                     startActivity(internalcal);
-                    finish();
                     return true;
                 } else if (itemId == R.id.item2) {
                     startActivity(attendancecal);
-                    finish();
                     return true;
                 } else if (itemId == R.id.item3) {
                     startActivity(semmarks);
-                    finish();
-                    return true;
-                } else if (itemId == R.id.item4) {
-//                    startActivity(signin);
-//                    finish();
-                    Toast.makeText(homepage.this, "Not Build at", Toast.LENGTH_SHORT).show();
-                    return true;
-                } else if (itemId== R.id.item5) {
-//                    startActivity(signup);
-//                    finish();
-                    Toast.makeText(homepage.this, "Not Build at", Toast.LENGTH_SHORT).show();
                     return true;
                 }
                 else if(itemId== R.id.item6){
                     startActivity(intent);
-                    finish();
                     return true;
                 }
 

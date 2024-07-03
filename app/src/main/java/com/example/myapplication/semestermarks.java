@@ -53,7 +53,6 @@ public class semestermarks extends AppCompatActivity {
             public void onClick(View v) {
                 Intent backint=new Intent(semestermarks.this, branchresults.class);
                 startActivity(backint);
-                finish();
             }
         });
         y20_11.setOnClickListener(new View.OnClickListener() {

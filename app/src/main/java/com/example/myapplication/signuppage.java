@@ -63,14 +63,12 @@ public class signuppage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(signuppage.this,signinpage.class));
-                finish();
             }
         });
         regback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(signuppage.this,signinpage.class));
-                finish();
             }
         });
 
